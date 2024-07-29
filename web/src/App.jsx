@@ -16,7 +16,7 @@ function App() {
     setLoading(true); 
 
     try {
-      const response = await fetch('https://api-migration.vercel.app/check-urls', {
+      const response = await fetch('https://apipythonmigration.vercel.app/check-urls', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
