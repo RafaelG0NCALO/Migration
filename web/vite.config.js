@@ -5,10 +5,10 @@ export default defineConfig({
   plugins: [react()],
   server: {
     proxy: {
-      '/check-urls': {
-        target: 'https://apipythonmigration.vercel.app', // URL do seu backend
+      '/': {
+        target: 'https://apimigrationrender.onrender.com',
         changeOrigin: true,
-        rewrite: (path) => path.replace(/^\/check-urls/, '/check-urls'),
+        rewrite: (path) => path,
       },
     },
   },
