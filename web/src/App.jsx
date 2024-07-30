@@ -16,7 +16,7 @@ function App() {
     setLoading(true); 
 
     try {
-      const response = await fetch('/check-urls', {
+      const response = await fetch('https://apimigrationrender.onrender.com/check-urls', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
