@@ -3,9 +3,6 @@ import './App.css';
 import * as XLSX from 'xlsx';
 import { saveAs } from 'file-saver';
 
-// Defina a URL da API aqui
-const API_URL = 'https://apimigrationrender.onrender.com';
-
 function App() {
   const [baseUrl, setBaseUrl] = useState('');
   const [records, setRecords] = useState([]);
@@ -19,7 +16,7 @@ function App() {
     setLoading(true); 
 
     try {
-      const response = await fetch(`${API_URL}/check-urls`, {
+      const response = await fetch(`https://apimigrationrender.onrender.com/check-urls`, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
